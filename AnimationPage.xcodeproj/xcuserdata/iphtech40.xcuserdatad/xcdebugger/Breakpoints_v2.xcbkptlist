@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "27BB5583-07C2-4D55-A6BC-EC114E1F4BCD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61931DA2-8937-43A3-922F-733BCBAC418B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnimationPage/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnimationPage/ProfileCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ProfileCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57 - b4b2c7c7bd6a0f84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ProfileCollectionViewCell.personButton.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ProfileCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57 - 99b6b720a0e45fb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ProfileCollectionViewCell.personButton.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ProfileCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57 - 7351e654f302ab83"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ProfileCollectionViewCell.personButton.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ProfileCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57 - edf3e94afb2392c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ProfileCollectionViewCell.personButton.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ProfileCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57 - 77d4f241685945a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ProfileCollectionViewCell.init(frame: __C.CGRect) -&gt; AnimationPage.ProfileCollectionViewCell"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ProfileCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "9362CDDC-ACC9-4408-919C-BFDB0297CF57 - 4acac143307ed97f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ProfileCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AnimationPage.ProfileCollectionViewCell&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ProfileCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnimationPage/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00 - fca1fdcfecbe092"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ViewController.currentCell.getter : Swift.Optional&lt;AnimationPage.ProfileCollectionViewCell&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00 - 277059df03d8d09e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ViewController.currentCell.setter : Swift.Optional&lt;AnimationPage.ProfileCollectionViewCell&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00 - add72842553844ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ViewController.currentCell.modify : Swift.Optional&lt;AnimationPage.ProfileCollectionViewCell&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00 - 2a76763242d7ebf4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ViewController.currentCell.modify : Swift.Optional&lt;AnimationPage.ProfileCollectionViewCell&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00 - de753aa8a9f0365f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AnimationPage.ViewController"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "96D2962D-A0A6-4D1D-ADCF-629F7B937F00 - ff70c2d26c2c7f44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnimationPage.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AnimationPage.ViewController&gt;"
+                  moduleName = "AnimationPage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iphtech40/Downloads/AnimationPage%202/AnimationPage/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "928">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
