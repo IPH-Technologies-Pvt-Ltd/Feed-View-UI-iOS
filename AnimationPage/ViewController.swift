@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     var profileDataArray = [ProfileModel]()
     var photoArray = [PhotosCollection]()
-    
+     
     var currentlySelectedIndex = 0
  //   let photoArray = ["1","2","3","4","5","6"]
     var currentCell:ProfileCollectionViewCell?
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         }
         if let layout = photoCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
-            layout.minimumLineSpacing = 20
+            layout.minimumLineSpacing = 10
             layout.minimumInteritemSpacing = 0
             layout.sectionInset = UIEdgeInsets(top: 0, left: 00, bottom: 0, right: 0)
             layout.itemSize = CGSize(width: photoCollectionView.frame.size.width / 3 + 10, height: photoCollectionView.frame.size.height)
@@ -82,10 +82,10 @@ class ViewController: UIViewController {
         }
         
     }
-    
+    // for small picture
     func addingDemoData() {
-        for i in 1...7 {
-            let item = ProfileModel(title: "Broke Listener_\(i)", address: "32 west aenue New york_\(i)", profilePic: "pic\(i)", description: "", post: "\(52*i)",followings: "\(50*i)",followers: "\(20*i)",photo: [
+        for i in 1...8 {
+            let item = ProfileModel(title: "Broke Listener", address: "32 west aenue New york", profilePic: "pic\(i)", description: "", post: "\(52*i)",followings: "\(50*i)",followers: "\(20*i)",photo: [
                 "\(Int(arc4random_uniform(6)) + 1)",
                 "\(Int(arc4random_uniform(6)) + 1)",
                 "\(Int(arc4random_uniform(6)) + 1)",
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
             profileDataArray.append(item)
         }
     }
-    
+   
     func setupUI() {
         detailBackgroundView.layer.cornerRadius = cornerRadius
         //detailBackgroundView.addShadow(shadowColor: .black, shadowOpacity: 0.8)
@@ -127,13 +127,20 @@ class ViewController: UIViewController {
 
         followButton.layer.addSublayer(gradientLayer!)
     }
+
     
     @objc func handleUpSwipeGesture(_ gestureRecognizer: UISwipeGestureRecognizer) {
         if gestureRecognizer.state == .ended {
-            detailBackgroundView.frame.origin.y = detailBackgroundView.frame.size.height - 30
-            currentCell?.postDetailsBackView.frame.origin.y = detailBackgroundView.frame.origin.y - 75
+            let animationDuration: TimeInterval = 0.7 // Adjust the duration to your preference
+            
+            UIView.animate(withDuration: animationDuration, delay: 0, options: [.curveEaseOut], animations: { [self] in
+                self.detailBackgroundView.frame.origin.y = self.detailBackgroundView.frame.size.height - 30
+                self.currentCell?.postDetailsBackView.frame.origin.y = self.detailBackgroundView.frame.origin.y - 75
+            }, completion: nil)
         }
     }
+    
+    
     
     func circleAnimation(_ view: UIButton, duration: CFTimeInterval) {
         let maskDiameter = CGFloat(sqrtf(powf(Float(followButton.bounds.width), 2) + powf(Float(view.bounds.height), 2)))
@@ -191,11 +198,15 @@ class ViewController: UIViewController {
         circleAnimation(followButton, duration: 1.0)
         
     }
+    
     @objc func handleDownSwipeGesture(_ gestureRecognizer: UISwipeGestureRecognizer) {
         if gestureRecognizer.state == .ended {
-            detailBackgroundView.frame.origin.y =  1.5 * detailBackgroundView.frame.size.height
-            currentCell?.postDetailsBackView.frame.origin.y = detailBackgroundView.frame.origin.y - 75
+            let animationDuration: TimeInterval = 0.7 // Adjust the duration to your preference
 
+            UIView.animate(withDuration: animationDuration, delay: 0, options: [.curveEaseOut], animations: { [self] in
+                detailBackgroundView.frame.origin.y =  1.5 * self.self.detailBackgroundView.frame.size.height
+                currentCell?.postDetailsBackView.frame.origin.y = detailBackgroundView.frame.origin.y - 75
+            }, completion: nil)
         }
     }
 
@@ -207,7 +218,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             return profileDataArray.count
         }
         else {
-            return 6
+            return photoArray.count
         }
         
     }
@@ -227,16 +238,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.followingCountLbl.text = data.followings
             titleLabel.text = data.title
             addressLabel.text = data.address
-            descLbl.text = data.description
+      //      descLbl.text = data.description
             
-//            if !data.isFollowed {
-//                profileBtn.isHidden = true
-//                followButton.isHidden = false
-//            }
-//            else {
-//                profileBtn.isHidden = false
-//                followButton.isHidden = true
-//            }
             
             cell.postDetailsBackView.fadeOutToTop()
             cell.postDetailsBackView.fadeInFromBottom()
