@@ -1,61 +1,56 @@
-# User Profile UI (iOS)
+# User Profile UI - Swift
 
-User Profile UI is an iOS application that allows users to create and manage their profiles. This repository contains the source code and related resources for the User Profile UI iOS app.
+This project is a user profile UI implemented in Swift. It provides a visually appealing interface to display user information and can serve as a starting point for building user profile screens in iOS applications.
 
 ## Features
 
-- Create a user profile with personal information such as name, email, and profile picture.
-- View and edit user profile information.
-- Update the profile picture by selecting an image from the device's photo library or taking a new photo.
-- Save and load user profiles using Core Data.
+- Display user profile picture
+- Show user's name, bio, and other details
+- Social media links to connect with the user
+- Customizable design and layout
 
 ## Requirements
 
 - Xcode 12.0 or later
-- iOS 13.0 or later
 - Swift 5.0 or later
+- iOS 12.0 or later
 
-## Getting Started
+## Installation
 
-To get started with the User Profile UI iOS app, follow these steps:
+1. Clone the repository:
 
-1. Clone the repository to your local machine:
+```bash
+git clone https://github.com/IPH-Technologies-Pvt-Ltd/user-profile-ui-ios.git
+```
 
-   ```bash
-   git clone https://github.com/your-username/user-profile-ui-ios.git
-   ```
+2. Navigate to the project directory:
 
-2. Open the `UserProfileUI.xcodeproj` file in Xcode.
+```bash
+cd user-profile-ui-ios.git
+```
 
-3. Build and run the app on the iOS Simulator or a connected device.
+3. Open the Xcode project file:
 
-## Folder Structure
+```bash
+open UserProfileUI.xcodeproj
+```
 
-The repository is organized as follows:
+4. Build and run the project using the Xcode simulator or a connected iOS device.
 
-- `UserProfileUI/`: Contains the Xcode project and source code files.
-  - `Controllers/`: Contains view controllers used in the app.
-  - `Models/`: Contains data models used in the app.
-  - `Views/`: Contains custom views and UI components.
-- `Resources/`: Contains asset files such as images.
-- `Tests/`: Contains unit tests for the app.
+## Usage
 
-## Dependencies
+The project demonstrates the implementation of a user profile screen using Swift and UIKit. You can customize the UI and add additional functionality to meet your requirements.
 
-The User Profile UI iOS app uses the following dependencies, which are already included in the repository:
-
-- `Alamofire`: Used for network requests.
-- `SDWebImage`: Used for asynchronous image loading and caching.
-
-The dependencies are managed using CocoaPods. The required pods are already included in the repository, so there is no need to install them separately.
+The main code files are located in the `UserProfileUI` directory. Feel free to modify the existing code or add new files as needed.
 
 ## Contributing
 
-If you would like to contribute to the User Profile UI iOS app, feel free to submit a pull request. Make sure to follow the project's coding style and guidelines.
+Contributions are welcome! If you have any suggestions, bug fixes, or improvements, please create a new pull request. Make sure to follow the existing coding style and include relevant tests if applicable.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## Video
+## Acknowledgements
 
+- [FontAwesomeSwift](https://github.com/thii/FontAwesome.swift) - Used for displaying social media icons.
