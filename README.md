@@ -57,12 +57,5 @@ If you would like to contribute to the User Profile UI iOS app, feel free to sub
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-## Acknowledgments
+## Video
 
-The User Profile UI iOS app is based on the project developed during the "iOS Development with Swift" course offered by [OpenAI University](https://university.openai.com/).
-
-## Contact
-
-If you have any questions or suggestions, please feel free to contact the project maintainer at [your-email@example.com](mailto:your-email@example.com).
-
-Happy coding!
