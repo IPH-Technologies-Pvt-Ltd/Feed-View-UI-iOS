@@ -57,5 +57,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Screenshot
 <img src="https://github.com/IPH-Technologies-Pvt-Ltd/User-Profile-UI-iOS/assets/124572978/1a868d44-3f2f-45e8-b240-84689da69b8c" 
-     width="200" 
-     height="400"/>
+     width="400" 
+     height="750"/>
