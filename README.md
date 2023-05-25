@@ -1,10 +1,10 @@
 # Feed View UI - Swift
 
-This project is a user profile UI implemented in Swift. It provides a visually appealing interface to display user information and can serve as a starting point for building user profile screens in iOS applications.
+This project is a Feed View UI implemented in Swift. It provides a visually appealing interface to display user information and can serve as a starting point for building user profile screens in iOS applications.
 
 ## Features
 
-- Display user profile picture
+- Display Feed View picture
 - Show user's name, bio, and other details
 - Social media links to connect with the user
 - Customizable design and layout
@@ -26,22 +26,22 @@ git clone https://github.com/IPH-Technologies-Pvt-Ltd/feed-view-ui-ios.git
 2. Navigate to the project directory:
 
 ```bash
-cd user-profile-ui-ios.git
+cd feed-view-ui-ios.git
 ```
 
 3. Open the Xcode project file:
 
 ```bash
-open UserProfileUI.xcodeproj
+open FeedViewUI.xcodeproj
 ```
 
 4. Build and run the project using the Xcode simulator or a connected iOS device.
 
 ## Usage
 
-The project demonstrates the implementation of a user profile screen using Swift and UIKit. You can customize the UI and add additional functionality to meet your requirements.
+The project demonstrates the implementation of a feed view screen using Swift and UIKit. You can customize the UI and add additional functionality to meet your requirements.
 
-The main code files are located in the `UserProfileUI` directory. Feel free to modify the existing code or add new files as needed.
+The main code files are located in the `FeedViewUI` directory. Feel free to modify the existing code or add new files as needed.
 
 ## Contributing
 
