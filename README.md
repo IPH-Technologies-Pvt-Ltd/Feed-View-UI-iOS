@@ -1,4 +1,4 @@
-# User Profile UI - Swift
+# Feed View UI - Swift
 
 This project is a user profile UI implemented in Swift. It provides a visually appealing interface to display user information and can serve as a starting point for building user profile screens in iOS applications.
 
@@ -20,7 +20,7 @@ This project is a user profile UI implemented in Swift. It provides a visually a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/IPH-Technologies-Pvt-Ltd/user-profile-ui-ios.git
+git clone https://github.com/IPH-Technologies-Pvt-Ltd/feed-view-ui-ios.git
 ```
 
 2. Navigate to the project directory:
