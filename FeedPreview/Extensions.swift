@@ -1,24 +1,12 @@
 //
 //  Extensions.swift
-//  AnimationPage
+//  FeedPreview
 //
-//  Created by iPHTech on 03/05/23.
+//  Created by IPH Technologies Pvt. Ltd.
 //
 
 import Foundation
 import UIKit
-
-//extension UIView {
-//    func addShadow(shadowColor: UIColor = .black,
-//                   shadowOffset: CGSize = .zero,
-//                   shadowOpacity: Float = 0.5,
-//                   shadowRadius: CGFloat = 5) {
-//        layer.shadowColor = shadowColor.cgColor
-//        layer.shadowOffset = shadowOffset
-//        layer.shadowOpacity = shadowOpacity
-//        layer.shadowRadius = shadowRadius
-//    }
-//}
 
 extension UIView {
    

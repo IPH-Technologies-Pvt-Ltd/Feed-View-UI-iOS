@@ -1,8 +1,8 @@
 //
 //  ProfileCollectionViewCell.swift
-//  AnimationPage
+//  FeedPreview
 //
-//  Created by iPHTech on 03/05/23.
+//  Created by IPH Technologies Pvt. Ltd.
 //
 
 import UIKit
@@ -20,6 +20,7 @@ class ProfileCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var followersCountLbl: UILabel!
     @IBOutlet weak var postDetailsBackView: UIView!
     static let identifier = "ProfileCollectionViewCell"
+    
 }
 
 
@@ -27,4 +28,5 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var photoImageView: UIImageView!
     static let identifier = "PhotoCollectionViewCell"
+    
 }

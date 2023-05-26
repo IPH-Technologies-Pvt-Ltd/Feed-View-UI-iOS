@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  AnimationPage
+//  FeedPreview
 //
-//  Created by iPHTech on 03/05/23.
+//  Created by IPH Technologies Pvt. Ltd.
 //
 
 import UIKit

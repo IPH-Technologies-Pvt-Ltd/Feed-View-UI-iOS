@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "31D666A52A02480400D85D12"
-               BuildableName = "AnimationPage.app"
-               BlueprintName = "AnimationPage"
-               ReferencedContainer = "container:AnimationPage.xcodeproj">
+               BuildableName = "FeedPreview.app"
+               BlueprintName = "FeedPreview"
+               ReferencedContainer = "container:FeedPreview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "31D666A52A02480400D85D12"
-            BuildableName = "AnimationPage.app"
-            BlueprintName = "AnimationPage"
-            ReferencedContainer = "container:AnimationPage.xcodeproj">
+            BuildableName = "FeedPreview.app"
+            BlueprintName = "FeedPreview"
+            ReferencedContainer = "container:FeedPreview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "31D666A52A02480400D85D12"
-            BuildableName = "AnimationPage.app"
-            BlueprintName = "AnimationPage"
-            ReferencedContainer = "container:AnimationPage.xcodeproj">
+            BuildableName = "FeedPreview.app"
+            BlueprintName = "FeedPreview"
+            ReferencedContainer = "container:FeedPreview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

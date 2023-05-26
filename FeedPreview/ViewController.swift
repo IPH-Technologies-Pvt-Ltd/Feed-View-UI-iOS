@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  AnimationPage
+//  FeedPreview
 //
-//  Created by iPHTech on 03/05/23.
+//  Created by IPH Technologies Pvt. Ltd.
 //
 
 import UIKit
@@ -13,7 +13,8 @@ enum swipeDirection {
 }
 
 class ViewController: UIViewController {
-
+    
+    //MARK: IBOutlets
     @IBOutlet weak var detailBackgroundView: UIView!
     @IBOutlet weak var profileCollectionView: UICollectionView!
     @IBOutlet weak var photoCollectionView: UICollectionView!
@@ -24,20 +25,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var descLbl: UILabel!
     @IBOutlet weak var profileBtn: UIButton!
     
+    //MARK: Constants
     var profileDataArray = [ProfileModel]()
     var photoArray = [PhotosCollection]()
-     
     var currentlySelectedIndex = 0
- //   let photoArray = ["1","2","3","4","5","6"]
     var currentCell:ProfileCollectionViewCell?
     var gradientLayer: CAGradientLayer?
+    
+    //MARK: Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addingDemoData()
         
         photoArray = PhotosCollection.defaultPhotoList()
-        
         
         profileCollectionView.delegate = self
         profileCollectionView.dataSource = self
@@ -61,12 +62,14 @@ class ViewController: UIViewController {
             layout.sectionInset = UIEdgeInsets(top: 0, left: 00, bottom: 0, right: 0)
             layout.itemSize = CGSize(width: photoCollectionView.frame.size.width / 3 + 10, height: photoCollectionView.frame.size.height)
         }
+        
         //inhancing UI outlook
         setupUI()
         
         //adding upword swipe gesture
         addSwipeGesture(direction: .up)
         addSwipeGesture(direction: .down)
+        
     }
     
     func addSwipeGesture(direction: swipeDirection) {
@@ -85,7 +88,7 @@ class ViewController: UIViewController {
     // for small picture
     func addingDemoData() {
         for i in 1...8 {
-            let item = ProfileModel(title: "Broke Listener", address: "32 west aenue New york", profilePic: "pic\(i)", description: "", post: "\(52*i)",followings: "\(50*i)",followers: "\(20*i)",photo: [
+            let item = ProfileModel(title: "Broke Listener", address: "32 west aenue New york", profilePic: "pic\(i)", description: "", posts: 52*i,followings: 50*i,followers: 20*i,photos: [
                 "\(Int(arc4random_uniform(6)) + 1)",
                 "\(Int(arc4random_uniform(6)) + 1)",
                 "\(Int(arc4random_uniform(6)) + 1)",
@@ -96,6 +99,7 @@ class ViewController: UIViewController {
         }
     }
    
+    //MARK: SetUpUIComponents
     func setupUI() {
         detailBackgroundView.layer.cornerRadius = cornerRadius
         //detailBackgroundView.addShadow(shadowColor: .black, shadowOpacity: 0.8)
@@ -126,6 +130,7 @@ class ViewController: UIViewController {
         gradientLayer?.colors = [startColor, endColor]
 
         followButton.layer.addSublayer(gradientLayer!)
+        
     }
 
     
@@ -197,6 +202,7 @@ class ViewController: UIViewController {
                 }
         circleAnimation(followButton, duration: 1.0)
         
+        
     }
     
     @objc func handleDownSwipeGesture(_ gestureRecognizer: UISwipeGestureRecognizer) {
@@ -209,9 +215,11 @@ class ViewController: UIViewController {
             }, completion: nil)
         }
     }
+    
 
 }
 
+//MARK: Extension
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == profileCollectionView {
@@ -233,9 +241,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             cell.profileImageView.contentMode = .scaleToFill
             cell.crossButton.tintColor = UIColor.white
             cell.personButton.tintColor = UIColor.white
-            cell.postCountLbl.text = data.post
-            cell.followersCountLbl.text = data.followers
-            cell.followingCountLbl.text = data.followings
+            cell.postCountLbl.text = String(data.posts)
+            cell.followersCountLbl.text = String(data.followers)
+            cell.followingCountLbl.text = String(data.followings)
             titleLabel.text = data.title
             addressLabel.text = data.address
       //      descLbl.text = data.description
@@ -269,6 +277,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             currentlySelectedIndex = indexPath.row
         }
     }
+    
+    
     
 }
 
