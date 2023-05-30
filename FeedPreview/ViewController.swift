@@ -27,18 +27,20 @@ class ViewController: UIViewController {
     
     //MARK: Constants
     var profileDataArray = [ProfileModel]()
-    var photoArray = [PhotosCollection]()
     var currentlySelectedIndex = 0
     var currentCell:ProfileCollectionViewCell?
     var gradientLayer: CAGradientLayer?
+    
+    var currentlySelectedRow = 0
     
     //MARK: Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addingDemoData()
+//        addingDemoData()
+        profileDataArray = HandleDefaultData.shared.getDefaultFeed()
         
-        photoArray = PhotosCollection.defaultPhotoList()
+//        photoArray = PhotosCollection.defaultPhotoList()
         
         profileCollectionView.delegate = self
         profileCollectionView.dataSource = self
@@ -86,18 +88,18 @@ class ViewController: UIViewController {
         
     }
     // for small picture
-    func addingDemoData() {
-        for i in 1...8 {
-            let item = ProfileModel(title: "Broke Listener", address: "32 west aenue New york", profilePic: "pic\(i)", description: "", posts: 52*i,followings: 50*i,followers: 20*i,photos: [
-                "\(Int(arc4random_uniform(6)) + 1)",
-                "\(Int(arc4random_uniform(6)) + 1)",
-                "\(Int(arc4random_uniform(6)) + 1)",
-                "\(Int(arc4random_uniform(6)) + 1)",
-                "\(Int(arc4random_uniform(6)) + 1)",
-                "\(Int(arc4random_uniform(6)) + 1)"],isFollowed: false)
-            profileDataArray.append(item)
-        }
-    }
+//    func addingDemoData() {
+//        for i in 1...8 {
+//            let item = ProfileModel(title: "Broke Listener", address: "32 west aenue New york", profilePic: "pic\(i)", description: "", posts: 52*i,followings: 50*i,followers: 20*i,photos: [
+//                "\(Int(arc4random_uniform(6)) + 1)",
+//                "\(Int(arc4random_uniform(6)) + 1)",
+//                "\(Int(arc4random_uniform(6)) + 1)",
+//                "\(Int(arc4random_uniform(6)) + 1)",
+//                "\(Int(arc4random_uniform(6)) + 1)",
+//                "\(Int(arc4random_uniform(6)) + 1)"],isFollowed: false)
+//            profileDataArray.append(item)
+//        }
+//    }
    
     //MARK: SetUpUIComponents
     func setupUI() {
@@ -226,7 +228,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             return profileDataArray.count
         }
         else {
-            return photoArray.count
+            return profileDataArray[self.currentlySelectedRow].photos.count
         }
         
     }
@@ -263,7 +265,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCollectionViewCell.identifier, for: indexPath) as? PhotoCollectionViewCell else {
                 return UICollectionViewCell()
             }
-            cell.photoImageView.image = UIImage(named: photoArray[indexPath.row].photoName)
+            cell.photoImageView.image = UIImage(named: profileDataArray[currentlySelectedRow].photos[indexPath.row])
      //       cell.photoImageView.image = UIImage(named:image)
             cell.photoImageView.contentMode = .center
             cell.photoImageView.layer.cornerRadius = 10
@@ -272,13 +274,19 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let row = indexPath.row
+        
+        print("row data; \(row)")
+        self.currentlySelectedRow = row
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == profileCollectionView {
             currentlySelectedIndex = indexPath.row
         }
     }
-    
-    
-    
+
 }
 
