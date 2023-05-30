@@ -87,19 +87,6 @@ class ViewController: UIViewController {
         }
         
     }
-    // for small picture
-//    func addingDemoData() {
-//        for i in 1...8 {
-//            let item = ProfileModel(title: "Broke Listener", address: "32 west aenue New york", profilePic: "pic\(i)", description: "", posts: 52*i,followings: 50*i,followers: 20*i,photos: [
-//                "\(Int(arc4random_uniform(6)) + 1)",
-//                "\(Int(arc4random_uniform(6)) + 1)",
-//                "\(Int(arc4random_uniform(6)) + 1)",
-//                "\(Int(arc4random_uniform(6)) + 1)",
-//                "\(Int(arc4random_uniform(6)) + 1)",
-//                "\(Int(arc4random_uniform(6)) + 1)"],isFollowed: false)
-//            profileDataArray.append(item)
-//        }
-//    }
    
     //MARK: SetUpUIComponents
     func setupUI() {
