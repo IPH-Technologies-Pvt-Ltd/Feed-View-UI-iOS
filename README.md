@@ -1,4 +1,5 @@
 # Feed View UI - Swift
+[![Swift](https://img.shields.io/badge/swift-%2320232a.svg?style=for-the-badge&logo=swift&logoColor=%23F05138)](https://swift.org/)
 
 This project is a Feed View UI implemented in Swift. It provides a visually appealing interface to display user information and can serve as a starting point for building user profile screens in iOS applications.
 
