@@ -56,6 +56,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [FontAwesomeSwift](https://github.com/thii/FontAwesome.swift) - Used for displaying social media icons.
 
 ## Screenshot
-<img src="https://github.com/IPH-Technologies-Pvt-Ltd/User-Profile-UI-iOS/assets/124572978/1a868d44-3f2f-45e8-b240-84689da69b8c" 
+<img src="https://github.com/IPH-Technologies-Pvt-Ltd/Feed-View-UI-iOS/blob/ajay-kumar-iphtech-patch-1/Simulator%20Screen%20Recording%20-%20iPhone%2014%20Pro%20-%202023-05-19%20at%2010.54.20.gif" 
      width="400" 
      height="750"/>
